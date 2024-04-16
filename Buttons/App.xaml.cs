@@ -2,13 +2,10 @@
 using System.Data;
 using System.Windows;
 
-namespace Buttons
+namespace Buttons;
+
+public partial class App : Application
 {
-	/// <summary>
-	/// Interaction logic for App.xaml
-	/// </summary>
-	public partial class App : Application
-	{
-	}
+
 
 }

@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Buttons"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="550">
-
-
+        
+        Title="Button App"
+        Height="350" Width="550"
+        Background="Silver"
+        >
+        
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -23,23 +26,22 @@
         </Grid.RowDefinitions>
 
         <Button Grid.Row="0" Grid.Column="0" Content="1" x:Name="Button1"
-                Background="Red" Click="Button1_Click" FontSize="22" FontWeight="Bold"></Button>
-      
-        <Button Grid.Row="0" Grid.Column="2" Content="2" x:Name="Button2" Click="Button2_Click"  FontSize="22" FontWeight="Bold"
-                Background="Green"/>
-      
-        <Button Grid.Row="0" Grid.Column="4" Content="3" x:Name="Button3"
-                Background="Blue" Click="Button3_Click" FontSize="22" FontWeight="Bold"></Button>
-      
-        <Button Grid.Row="2" Grid.Column="0" Content="4" x:Name="Button4"
-               Background="Yellow" Click="Button4_Click"  FontSize="22" FontWeight="Bold"></Button>
-     
-        <Button Grid.Row="2" Grid.Column="2" Content="5" x:Name="Button5"
-               Background="Violet" Click="Button5_Click" FontSize="22" FontWeight="Bold"></Button>
-      
-        <Button Grid.Row="2" Grid.Column="4" Content="6" x:Name="Button6"
-              Background="Orange" Click="Button6_Click"  FontSize="22" FontWeight="Bold"></Button>
+                Background="Red" FontSize="28" Click="Button_Click" FontWeight="Bold" MouseDown="Button_MouseDown"/>
 
+        <Button Grid.Row="0" Grid.Column="2" Content="2" x:Name="Button2"
+                FontSize="28" FontWeight="Bold" Click="Button_Click" Background="Green" MouseDown="Button_MouseDown"/>
+
+        <Button Grid.Row="0" Grid.Column="4" Content="3" x:Name="Button3"
+                Background="Blue" FontSize="28" Click="Button_Click" FontWeight="Bold" MouseDown="Button_MouseDown"/>
+
+        <Button Grid.Row="2" Grid.Column="0" Content="4" x:Name="Button4"
+               Background="Yellow" FontSize="28" Click="Button_Click" FontWeight="Bold" MouseDown="Button_MouseDown"/>
+
+        <Button Grid.Row="2" Grid.Column="2" Content="5" x:Name="Button5"
+               Background="Violet" FontSize="28" Click="Button_Click" FontWeight="Bold" MouseDown="Button_MouseDown"/>
+
+        <Button Grid.Row="2" Grid.Column="4" Content="6" x:Name="Button6"
+              Background="Orange" FontSize="28" Click="Button_Click" FontWeight="Bold" MouseDown="Button_MouseDown"/>
 
     </Grid>
 
